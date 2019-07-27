@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CityFragment">
+
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        android:id="@+id/searchBar"
+        style="@style/MaterialSearchBarLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mt_hint="Название города"
+        app:mt_speechMode="false">
+
+    </com.mancj.materialsearchbar.MaterialSearchBar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/weather_panel"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txt_city_name"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="Weather in wtf, WTF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_weather"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:id="@+id/txt_temperature"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:text="49 C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_description"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Weather in wtf, WTF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_date_time"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Sunny, very sunny..."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TableLayout
+                android:background="@drawable/border"
+                android:layout_marginTop="10dp"
+                android:stretchColumns="*"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:background="@drawable/cell"
+                        android:text="Ветер"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        />
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_column="1"
+                        android:id="@+id/txt_wind"
+                        android:background="@drawable/cell"
+                        android:text="Speed: 1 Deg 1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:background="@drawable/cell"
+                        android:text="Давление"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        />
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_column="1"
+                        android:id="@+id/txt_pressure"
+                        android:background="@drawable/cell"
+                        android:text="99999.99 hps"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:background="@drawable/cell"
+                        android:text="Влажность"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        />
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_column="1"
+                        android:id="@+id/txt_humidity"
+                        android:background="@drawable/cell"
+                        android:text="100%"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:background="@drawable/cell"
+                        android:text="Восход"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        />
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_column="1"
+                        android:id="@+id/txt_sunrise"
+                        android:background="@drawable/cell"
+                        android:text="11:00"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:background="@drawable/cell"
+                        android:text="Закат"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        />
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_column="1"
+                        android:id="@+id/txt_sunset"
+                        android:background="@drawable/cell"
+                        android:text="18:00"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:background="@drawable/cell"
+                        android:text="Координаты"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        />
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_column="1"
+                        android:id="@+id/txt_geo_coords"
+                        android:background="@drawable/cell"
+                        android:text="Скайфол"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        />
+
+                </TableRow>
+
+
+
+            </TableLayout>
+
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:indeterminate="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+</LinearLayout>

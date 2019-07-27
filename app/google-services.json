@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "150787854073",
+    "firebase_url": "https://weatherappmad.firebaseio.com",
+    "project_id": "weatherappmad",
+    "storage_bucket": "weatherappmad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150787854073:android:00a7487fa9886ba7",
+        "android_client_info": {
+          "package_name": "com.hfad.weatherappmaddevs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150787854073-0v9ve8397frd4ueiotc9gd17ptrtuqur.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hfad.weatherappmaddevs",
+            "certificate_hash": "e9d9f3af72a121c065f1d7688c53947cbf728906"
+          }
+        },
+        {
+          "client_id": "150787854073-39u5aksr009or29mjds06gn2leut34ec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM0adGHly6AyuIMmxyXszsthA67hHsc2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150787854073-39u5aksr009or29mjds06gn2leut34ec.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
